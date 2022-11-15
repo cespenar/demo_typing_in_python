@@ -1,0 +1,1 @@
+### Demo code demonstrating static typing in Python
