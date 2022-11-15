@@ -1,10 +1,14 @@
-# double without type hints
 def double_simple(x):
+    """
+    Double without type hints.
+    """
     return x * 2
 
 
-# double with a very simple type hint. This isn't really correct.
 def double_simple_typed(x: int) -> int:
+    """
+    Double with a very simple type hint. This isn't really correct.
+    """
     return x * 2
 
 
