@@ -1,16 +1,16 @@
 from typing import Protocol, Any
 
 
-class SupportsMultiplication(Protocol):
+class Multiplicable(Protocol):
     def __mul__(self, other: Any) -> Any: ...
 
 
-def double_correct(x: SupportsMultiplication) -> Any:
+def double_multiplicable(x: Multiplicable) -> Any:
     return x * 2
 
 
 if __name__ == '__main__':
-    print(double_correct(2))
-    print(double_correct('meow '))
-    print(double_correct([1, 2, 3]))
-    print(double_correct(3 + 2j))
+    print(double_multiplicable(2))
+    print(double_multiplicable('meow '))
+    print(double_multiplicable([1, 2, 3]))
+    print(double_multiplicable(3 + 2j))
