@@ -1,5 +1,6 @@
 if __name__ == '__main__':
     # Basic syntax
+    # Variable annotations
     name: str
     age: int
 
