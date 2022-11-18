@@ -51,6 +51,8 @@
         * `collections.abc.Mapping[X, Y]`
         * `collections.abc.MutableMapping[X, Y]`
 7. Abstract base classes
+    * Robustness principle ([Postel's law](https://en.wikipedia.org/wiki/Robustness_principle)): "be conservative in
+      what you send, be liberal in what you accept"
 8. Generic iterables
 9. Parametrized generics and `TypeVar`
 10. `typing.Protocols`
