@@ -26,19 +26,30 @@
     * `bytes`
     * Any class you wrote or imported
 3. `typing.Self`
-   * Special type to represent the current enclosed class
-   * Useful for alternative constructors
-   * Python 3.11
+    * Special type to represent the current enclosed class
+    * Useful for alternative constructors
+    * Python 3.11
 4. `typing.LiteralString`
-   * Python 3.11
+    * Python 3.11
 5. `typing.Optional` and `typing.Union`
-   * `Optional` is appropriate when `None` is allowed
-   * `Union[X, Y]` == `X | Y`
-   * `Optional[X]` == `Union[X, None]` == `X | None`
-   * `X | Y | ...`
-   * Union type expressions - Python 3.10
-   * For Python < 3.10: avoid `Optional[X]`, use `Union[X, None]`
+    * `Optional` is appropriate when `None` is allowed
+    * `Union[X, Y]` == `X | Y`
+    * `Optional[X]` == `Union[X, None]` == `X | None`
+    * `X | Y | ...`
+    * Union type expressions - Python 3.10
+    * For Python < 3.10: avoid `Optional[X]`, use `Union[X, None]`
 6. Generic collections, including tuples and mappings
+    * Lists:
+        * Subscription syntax: `list[X]` (Python >= 3.9) - homogeneous collections
+        * `stuff: list[Any]` == `stuff: list` - heterogeneous collections, rare stuff
+    * Tuples:
+        * Tuples as records (with named fields or not): `tuple[X, Y, Z]`
+        * Tuples as immutables sequences: `tuple[X, ...]` - one or more elements
+        * `stuff: tuple[Any]` == `stuff: list` - objects of any type, unspecified length
+    * Mappings:
+        * `dict[X, Y]`
+        * `collections.abc.Mapping[X, Y]`
+        * `collections.abc.MutableMapping[X, Y]`
 7. Abstract base classes
 8. Generic iterables
 9. Parametrized generics and `TypeVar`
