@@ -3,7 +3,8 @@
 
 from typing import LiteralString
 
-def run_query(sql: LiteralString) -> ...
+
+def run_query(sql: LiteralString) -> None:
     ...
 
 

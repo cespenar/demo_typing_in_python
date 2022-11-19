@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "demo-typing-in-python"
+version = "0.1.0"
+description = ""
+authors = ["Jakub Ostrowski <cespenar1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "demo_typing_in_python"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mypy = "^0.991"
+pytest = "^7.2.0"
+blue = "^0.9.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
