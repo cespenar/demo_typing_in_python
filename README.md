@@ -59,6 +59,9 @@
     * Robustness
       principle ([Postel's law](https://en.wikipedia.org/wiki/Robustness_principle)):
       "be conservative in what you send, be liberal in what you accept"
+    * Abstract base classes that can be used to test whether a class provides a
+      particular interface; for example, whether it is hashable or whether it
+      is a mapping.
 8. Generic iterables
 9. Parametrized generics and `TypeVar`
 10. `typing.Protocols`
