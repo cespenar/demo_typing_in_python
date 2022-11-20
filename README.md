@@ -11,6 +11,7 @@
 * NewType
 * structural vs nominal subtyping
 * demo how to use types in older versions of Python
+* function annotations
 
 ### Types usable in annotations
 
@@ -40,19 +41,24 @@
     * For Python < 3.10: avoid `Optional[X]`, use `Union[X, None]`
 6. Generic collections, including tuples and mappings
     * Lists:
-        * Subscription syntax: `list[X]` (Python >= 3.9) - homogeneous collections
-        * `stuff: list[Any]` == `stuff: list` - heterogeneous collections, rare stuff
+        * Subscription syntax: `list[X]` (Python >= 3.9) - homogeneous
+          collections
+        * `stuff: list[Any]` == `stuff: list` - heterogeneous collections, rare
+          stuff
     * Tuples:
         * Tuples as records (with named fields or not): `tuple[X, Y, Z]`
-        * Tuples as immutables sequences: `tuple[X, ...]` - one or more elements
-        * `stuff: tuple[Any]` == `stuff: list` - objects of any type, unspecified length
+        * Tuples as immutables sequences: `tuple[X, ...]` - one or more
+          elements
+        * `stuff: tuple[Any]` == `stuff: list` - objects of any type,
+          unspecified length
     * Mappings:
         * `dict[X, Y]`
         * `collections.abc.Mapping[X, Y]`
         * `collections.abc.MutableMapping[X, Y]`
 7. Abstract base classes
-    * Robustness principle ([Postel's law](https://en.wikipedia.org/wiki/Robustness_principle)): "be conservative in
-      what you send, be liberal in what you accept"
+    * Robustness
+      principle ([Postel's law](https://en.wikipedia.org/wiki/Robustness_principle)):
+      "be conservative in what you send, be liberal in what you accept"
 8. Generic iterables
 9. Parametrized generics and `TypeVar`
 10. `typing.Protocols`
@@ -67,7 +73,8 @@
 
 * [Python documentation](https://docs.python.org/3/library/typing.html)
 * [mypy documentation](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
-* [Fluent Python, 2nd Edition](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/), Luciano Ramalho,
+* [Fluent Python, 2nd Edition](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/)
+  , Luciano Ramalho,
   O'Reilly Media, Inc., April 2022
 * [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
 * [PEP 673 – Self Type](https://peps.python.org/pep-0673/)
