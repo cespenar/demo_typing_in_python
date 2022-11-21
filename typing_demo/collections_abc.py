@@ -23,6 +23,9 @@ class D:  # No inheritance
     def index(self, value): ...  # Mixin method
 
 
+Sequence.register(D)
+
+
 class E:
     def __iter__(self): ...
 
@@ -31,7 +34,6 @@ if __name__ == '__main__':
     print(issubclass(C, Sequence))
     print(isinstance(C(), Sequence))
 
-    Sequence.register(D)
     print(issubclass(D, Sequence))
     print(isinstance(D(), Sequence))
 

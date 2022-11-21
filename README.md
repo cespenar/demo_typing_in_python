@@ -61,9 +61,12 @@
       "be conservative in what you send, be liberal in what you accept"
     * Abstract base classes that can be used to test whether a class provides a
       particular interface; for example, whether it is hashable or whether it
-      is a mapping.
+      is a mapping
+    * `collections.abc` - the most useful module
 8. Generic iterables
+    * `Sequence` and `Iterable` - the most common parameter types
 9. Parametrized generics and `TypeVar`
+    * The way to define custom type usable in classes, functions and collections
 10. `typing.Protocols`
 11. `typing.Callable`
 12. `typing.Never` and `typing.NoReturn`

@@ -1,11 +1,17 @@
-from typing import Protocol, Any
+# https://peps.python.org/pep-0544/ <- very difficult to read
+# https://mypy.readthedocs.io/en/stable/protocols.html
+
+from typing import Any, Protocol, TypeVar
 
 
 class Multiplicable(Protocol):
     def __mul__(self, other: Any) -> Any: ...
 
 
-def double_multiplicable(x: Multiplicable) -> Any:
+T = TypeVar('T', bound=Multiplicable)
+
+
+def double_multiplicable(x: T) -> T:
     return x * 2
 
 
