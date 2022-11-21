@@ -72,7 +72,8 @@
     * Static duck typing (structural subtyping)
     * Predefined protocols: `Iterable`, `Hashable`, `Reversible`, etc.
     * Custom protocols: subclasses of `typing.Protocol`
-11. `typing.Callable`
+11. `collections.abc.Callable`
+    * Used for annotating higher-order functions
 12. `typing.Never` and `typing.NoReturn`
     * `Never` - the bottom type, a type that has no members
     * New in Python 3.11
@@ -83,8 +84,7 @@
 
 * [Python documentation](https://docs.python.org/3/library/typing.html)
 * [mypy documentation](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
-* [Fluent Python, 2nd Edition](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/)
-  , Luciano Ramalho,
+* [Fluent Python, 2nd Edition](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/), Luciano Ramalho,
   O'Reilly Media, Inc., April 2022
 * [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
 * [PEP 673 – Self Type](https://peps.python.org/pep-0673/)
