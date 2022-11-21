@@ -67,7 +67,11 @@
     * `Sequence` and `Iterable` - the most common parameter types
 9. Parametrized generics and `TypeVar`
     * The way to define custom type usable in classes, functions and collections
-10. `typing.Protocols`
+10. `typing.Protocol`
+    * Protocols define interfaces. _Static_ protocols are used only for type checking
+    * Static duck typing (structural subtyping)
+    * Predefined protocols: `Iterable`, `Hashable`, `Reversible`, etc.
+    * Custom protocols: subclasses of `typing.Protocol`
 11. `typing.Callable`
 12. `typing.Never` and `typing.NoReturn`
     * `Never` - the bottom type, a type that has no members

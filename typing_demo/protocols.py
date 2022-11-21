@@ -1,22 +1,24 @@
 # https://peps.python.org/pep-0544/ <- very difficult to read
 # https://mypy.readthedocs.io/en/stable/protocols.html
 
-from typing import Any, Protocol, TypeVar
+from typing import Protocol, TypeVar
+
+T = TypeVar('T')
 
 
-class Multiplicable(Protocol):
-    def __mul__(self, other: Any) -> Any: ...
+class Repeatable(Protocol):
+    def __mul__(self: T, repeat_count: int) -> T: ...
 
 
-T = TypeVar('T', bound=Multiplicable)
+RT = TypeVar('RT', bound=Repeatable)
 
 
-def double_multiplicable(x: T) -> T:
+def double(x: RT) -> RT:
     return x * 2
 
 
 if __name__ == '__main__':
-    print(double_multiplicable(2))
-    print(double_multiplicable('meow '))
-    print(double_multiplicable([1, 2, 3]))
-    print(double_multiplicable(3 + 2j))
+    print(double(2))
+    print(double('meow '))
+    print(double([1, 2, 3]))
+    print(double(3 + 2j))
