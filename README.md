@@ -12,8 +12,11 @@
 * structural vs nominal subtyping
 * demo how to use types in older versions of Python
 * function annotations
+* notables use cases - Pydantic, FastAPI, httpx
 
 ### Types usable in annotations
+
+***
 
 1. `typing.Any`
     * Special type indicating an unconstrained type.
@@ -80,10 +83,22 @@
     * `NoReturn` - special type indicating that a function never returns
     * Replaced by `NoReturn`
 
+### Summary
+
+***
+
+* Type hints are great
+* They make the code more readable
+* They help finding bugs (but they cannot replace testing)
+* They allow more IDEs to have more accurate and smarter suggestion engine
+
 ### Sources
+
+***
 
 * [Python documentation](https://docs.python.org/3/library/typing.html)
 * [mypy documentation](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
+* [The state of type hints in Python](https://bernat.tech/posts/the-state-of-type-hints-in-python/), Bernát Gábor
 * [Fluent Python, 2nd Edition](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/), Luciano Ramalho,
   O'Reilly Media, Inc., April 2022
 * [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
