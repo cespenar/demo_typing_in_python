@@ -3,6 +3,7 @@ if __name__ == '__main__':
     # Variable annotations
     name: str
     age: int
+    salary: float = 500_000.0
 
     # Extremely simple example, but age might be interesting here...
     name = input('Name: ')
@@ -10,3 +11,4 @@ if __name__ == '__main__':
 
     print(name, type(name))
     print(age, type(age))
+    print(salary, type(salary))

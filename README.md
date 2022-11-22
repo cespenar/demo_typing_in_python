@@ -1,18 +1,24 @@
-# Static typing in Python
+# Typing in Python
 
 ***
 
-* different typing systems
-* what is and was in Python?
-* duck typing
-* static duck typing
-* what are type hints?
-* type aliases
-* NewType
-* structural vs nominal subtyping
-* demo how to use types in older versions of Python
-* function annotations
-* notables use cases - Pydantic, FastAPI, httpx
+### Introduction
+
+***
+
+* Type annotations were introduced in Python 3.5
+* `name: str = Jakub`
+* The Python runtime does not enforce type annotation
+* Python is a dynamically typed language
+* Gradual type hinting in Python
+* Duck typing - "if it walks and quacks like a duck, it is a duck"
+* Static type checkers verify the code without running it
+* Static type checkers: [mypy](http://mypy-lang.org/), [pytype](https://google.github.io/pytype/),
+  [pyre](https://pyre-check.org/), [pyright](https://github.com/microsoft/pyright)
+* Implicit runtime data validation (e.g. [pydantic](https://pydantic-docs.helpmanual.io/))
+
+"It should also be emphasized that **Python will remain a dynamically typed language, and the authors have no desire to
+ever make type hints mandatory, even by convention.**" - [PEP 484](https://peps.python.org/pep-0484/)
 
 ### Types usable in annotations
 
@@ -81,16 +87,24 @@
     * `Never` - the bottom type, a type that has no members
     * New in Python 3.11
     * `NoReturn` - special type indicating that a function never returns
-    * Replaced by `NoReturn`
+    * Replaced by `Never`
+
+### Additional remarks
+
+***
+
+* There are many more types, classes and functions in the `typing` module
+* Notables use cases of type hints: Pydantic, FastAPI, httpx
 
 ### Summary
 
 ***
 
 * Type hints are great
-* They make the code more readable
+* They make the code more readable and understandable
 * They help finding bugs (but they cannot replace testing)
 * They allow more IDEs to have more accurate and smarter suggestion engine
+* Very high cognitive cost of annotating some simple, but powerful functions and APIs
 
 ### Sources
 
@@ -99,8 +113,11 @@
 * [Python documentation](https://docs.python.org/3/library/typing.html)
 * [mypy documentation](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html)
 * [The state of type hints in Python](https://bernat.tech/posts/the-state-of-type-hints-in-python/), Bernát Gábor
+* [Hypermodern Python Chapter 4: Typing](https://cjolowicz.github.io/posts/hypermodern-python-04-typing/)
 * [Fluent Python, 2nd Edition](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/), Luciano Ramalho,
   O'Reilly Media, Inc., April 2022
 * [PEP 484 – Type Hints](https://peps.python.org/pep-0484/)
+* [PEP 544 – Protocols: Structural subtyping (static duck typing)](https://peps.python.org/pep-0544/)
 * [PEP 673 – Self Type](https://peps.python.org/pep-0673/)
 * [PEP 675 – Arbitrary Literal String Type](https://peps.python.org/pep-0675/)
+* [Awesome Python Typing](https://github.com/typeddjango/awesome-python-typing)
