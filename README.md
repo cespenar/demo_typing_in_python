@@ -94,7 +94,8 @@ ever make type hints mandatory, even by convention.**" - [PEP 484](https://peps.
 ***
 
 * There are many more types, classes and functions in the `typing` module
-* Notables use cases of type hints: Pydantic, FastAPI, httpx
+* Notables use cases of type hints: [Pydantic](https://pydantic-docs.helpmanual.io/),
+  [FastAPI](https://fastapi.tiangolo.com/), [HTTPX](https://www.python-httpx.org/)
 
 ### Summary
 
