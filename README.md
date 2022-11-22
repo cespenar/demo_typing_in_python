@@ -106,6 +106,7 @@ ever make type hints mandatory, even by convention.**" - [PEP 484](https://peps.
 * They help finding bugs (but they cannot replace testing)
 * They allow more IDEs to have more accurate and smarter suggestion engine
 * Very high cognitive cost of annotating some simple, but powerful functions and APIs
+* Should you use type hints? Yes, but...
 
 ### Sources
 
