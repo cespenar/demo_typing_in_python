@@ -10,10 +10,10 @@ class Repeatable(Protocol):
     def __mul__(self: T, repeat_count: int) -> T: ...
 
 
-RT = TypeVar('RT', bound=Repeatable)
+RepeatableT = TypeVar('RepeatableT', bound=Repeatable)
 
 
-def double(x: RT) -> RT:
+def double(x: RepeatableT) -> RepeatableT:
     return x * 2
 
 
