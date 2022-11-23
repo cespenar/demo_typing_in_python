@@ -102,7 +102,8 @@ ever make type hints mandatory, even by convention.**" - [PEP 484](https://peps.
 ***
 
 * Type hints are great
-* They make the code more readable and understandable
+* Type annotations make the code more readable and understandable
+* Type annotations help to document the code
 * They help finding bugs (but they cannot replace testing)
 * They allow more IDEs to have more accurate and smarter suggestion engine
 * Very high cognitive cost of annotating some simple, but powerful functions and APIs
