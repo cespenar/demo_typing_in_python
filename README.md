@@ -58,7 +58,7 @@ ever make type hints mandatory, even by convention.**" - [PEP 484](https://peps.
         * Tuples as records (with named fields or not): `tuple[X, Y, Z]`
         * Tuples as immutables sequences: `tuple[X, ...]` - one or more
           elements
-        * `stuff: tuple[Any]` == `stuff: list` - objects of any type,
+        * `stuff: tuple[Any]` == `stuff: tuple` - objects of any type,
           unspecified length
     * Mappings:
         * `dict[X, Y]`
